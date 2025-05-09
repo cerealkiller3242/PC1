@@ -1,0 +1,431 @@
+{
+	"info": {
+		"_postman_id": "030debb1-f142-44be-9f06-bcf6142497c4",
+		"name": "Historia Clínica Backend",
+		"description": "Colección organizada y profesional de endpoints para el sistema de gestión de historias clínicas.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34026023",
+		"_collection_link": "https://alejandroen-team.postman.co/workspace/pc1-20251-backend~b74e8a4e-21d0-404b-86a6-e5909db6c67d/collection/34026023-030debb1-f142-44be-9f06-bcf6142497c4?action=share&source=collection_link&creator=34026023"
+	},
+	"item": [
+		{
+			"name": "Pacientes",
+			"item": [
+				{
+					"name": "Crear paciente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pacientes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pacientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener paciente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/pacientes/:historiaId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pacientes",
+								":historiaId"
+							],
+							"variable": [
+								{
+									"key": "historiaId"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar nombres",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pacientes/:historiaId/nombres",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pacientes",
+								":historiaId",
+								"nombres"
+							],
+							"variable": [
+								{
+									"key": "historiaId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar médico cabecera",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pacientes/:historiaId/medico-cabecera",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pacientes",
+								":historiaId",
+								"medico-cabecera"
+							],
+							"variable": [
+								{
+									"key": "historiaId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar paciente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/pacientes/:historiaId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pacientes",
+								":historiaId"
+							],
+							"variable": [
+								{
+									"key": "historiaId"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar pacientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/pacientes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pacientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Historial médico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/pacientes/:historiaId/historial",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pacientes",
+								":historiaId",
+								"historial"
+							],
+							"variable": [
+								{
+									"key": "historiaId"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar estado",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pacientes/:historiaId/estado",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pacientes",
+								":historiaId",
+								"estado"
+							],
+							"variable": [
+								{
+									"key": "historiaId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Consultas",
+			"item": [
+				{
+					"name": "Registrar consulta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/consultas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"consultas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validar consulta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/consultas/validar/:medicoId/:pacienteId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"consultas",
+								"validar",
+								":medicoId",
+								":pacienteId"
+							],
+							"variable": [
+								{
+									"key": "medicoId"
+								},
+								{
+									"key": "pacienteId"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Registrar usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Iniciar sesión",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener usuario actual",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/auth/me",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Médicos",
+			"item": [
+				{
+					"name": "Disponibilidad por especialidad",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/medicos/:especialidadId/disponibilidad",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"medicos",
+								":especialidadId",
+								"disponibilidad"
+							],
+							"variable": [
+								{
+									"key": "especialidadId"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
